@@ -143,12 +143,20 @@ PORT=3333
 # TigerBeetle Configuration
 TB_CLUSTER_ID=0
 TB_REPLICA_ADDRESSES=localhost:3000
+
+# Redis Configuration (opsional, default localhost:6379 tanpa password)
+REDIS_HOST=127.0.0.1
+REDIS_PORT=6379
+REDIS_PASSWORD=
 ```
 
 **Penjelasan:**
 - `PORT`: Port tempat Express server berjalan
 - `TB_CLUSTER_ID`: Cluster ID TigerBeetle (default 0)
 - `TB_REPLICA_ADDRESSES`: Alamat dan port TigerBeetle
+- `REDIS_HOST`: IP/Domain redis
+- `REDIS_PORT`: Port redis
+- `REDIS_PASSWORD`: Password redis
 
 ### 3. Jalankan Aplikasi
 
